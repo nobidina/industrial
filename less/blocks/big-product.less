@@ -1,0 +1,59 @@
+.big-product {
+  position: relative;
+  box-sizing: border-box;
+  width: 1160px;
+  margin-bottom: 40px;
+  padding: 100px 35px 118px 59px;
+  background: #b3c2c5 url("../img/gina.jpg") no-repeat top center;
+  background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: 38px;
+    width: 112px;
+    height: 115px;
+    background: url("../img/kickstarter.png") no-repeat 12px 40px,
+                      url("../img/badge.png") no-repeat 0 0;
+  }
+}
+.big-product__name {
+  margin: 0 0 29px 0;
+  font-family: @bold;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+.big-product__description {
+  width: 375px;
+  margin: 0 0 139px 0;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.7px;
+}
+
+@media @tablet-widths {
+  .big-product {
+    margin-bottom: 35px;
+  }
+}
+
+@media @mobile-widths {
+  .big-product {
+    width: 320px;
+    margin-bottom: 0;
+    padding: 50px 35px 118px 31px;
+    &::after {
+      display: none;
+    }
+  }
+  .big-product__name {
+    margin-bottom: 19px;
+    font-size: 40px;
+  }
+  .big-product__description {
+    width: 230px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

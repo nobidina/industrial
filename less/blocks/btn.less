@@ -1,0 +1,35 @@
+.btn {
+  cursor: pointer;
+  width: 124px;
+  padding: 11px 0;
+  outline: none;
+  border: 3px solid #eec9a2;
+  font-family: @bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: @white;
+  background: none;
+  &:hover {
+    background-color: #eec9a2;
+  }
+  &:active {
+    color: #eedac6;
+  }
+  &_big {
+    width: 160px;
+    padding: 11px 0 16px 0;
+    font-family: @light;
+    font-size: 24px;
+    text-transform: none;
+    &:hover {
+      border-color: #a7b6bc;
+      background: none;
+    }
+    &:active {
+      border-color: #475a65;
+      color: #a7b6bc;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.small-product {
+  box-sizing: border-box;
+  width: 360px;
+  margin-right: 40px;
+  text-align: center;
+  &:nth-of-type(3n+3) {
+    margin-right: 0;
+  }
+  &_left {
+    padding-top: 63px;
+    padding-bottom: 230px;
+    background: #e97864 url("../img/molekule.png") no-repeat -21px 254px;
+    background-size: 400px 670px;
+  }
+  &_middle {
+    padding-top: 256px;
+    padding-bottom: 36px;
+    background: #557581 url("../img/signature.jpg") no-repeat 36px -82px;
+    background-size: 286px 304px;
+  }
+  &_right {
+    padding-top: 63px;
+    padding-bottom: 230px;
+    background: #82c9d8 url("../img/braun.png") no-repeat 30px 247px;
+    background-size: 300px 309px;
+  }
+}
+.small-product__description {
+  margin: 0 0 11px 0;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+.small-product__name {
+  margin: 0 0 28px 0;
+  font-family: @bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+@media @tablet-widths {
+  .small-product {
+    width: 241px;
+    margin-right: 20px;
+    &_left {
+      background: #e97864 url("../img/molekule.png") no-repeat -111px 254px;
+    }
+  }
+  .small-product__name {
+    font-size: 25px;
+  }
+}
+
+@media @mobile-widths {
+  .small-product {
+    width: 320px;
+    margin-right: 0;
+    margin-bottom: 0;
+    &_left {
+      padding-top: 50px;
+      background: #e97864 url("../img/molekule.png") no-repeat -43px 254px;
+    }
+    &_middle {
+      background: #557581 url("../img/signature.jpg") no-repeat 17px -86px;
+      background-size: 286px 304px;
+    }
+    &_right {
+      background: #82c9d8 url("../img/braun.png") no-repeat 10px 247px;
+      background-size: 300px 309px;
+    }
+  }
+  .small-product__name {
+    font-size: 30px;
+  }
+}
