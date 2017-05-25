@@ -17,6 +17,15 @@
                       url("../img/badge.png") no-repeat 0 0;
   }
 }
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .big-product {
+    background: #b3c2c5 url("../img/gina@2x.jpg") no-repeat top center;
+    background-size: 1160px 692px;
+  }
+}
+
 .big-product__name {
   margin: 0 0 29px 0;
   font-family: @bold;
@@ -42,10 +51,21 @@
     width: 320px;
     margin-bottom: 0;
     padding: 50px 35px 118px 31px;
+    background: #b3c2c5 url("../img/gina-mobile.jpg") no-repeat top center;
+    background-size: cover;
     &::after {
       display: none;
     }
   }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .big-product {
+      background: #b3c2c5 url("../img/gina-mobile@2x.jpg") no-repeat top center;
+      background-size: 786px 469px;
+    }
+  }
+
   .big-product__name {
     margin-bottom: 19px;
     font-size: 40px;
